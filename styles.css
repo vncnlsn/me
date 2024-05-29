@@ -11,12 +11,12 @@ body {
 header {
     background: url('images/forest.jpg') no-repeat center center;
     background-size: cover; /* Cover the entire header */
-    height: 100vh; /* You can adjust this if needed */
+    height: 80vh; /* You can adjust this if needed */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 20vh; /* Adjust this value to move content higher */
+    padding-top: 10vh; /* Adjust this value to move content higher */
 }
 
 .header-content h1 {
