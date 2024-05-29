@@ -7,15 +7,27 @@ body, h1, h2, h3, p, ul, li {
 /* Set body font and background */
 body {
     font-family: Arial, sans-serif;
+    color: #333; /* Text color */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+/* Background image */
+.background-image {
     background-image: url('images/forest.jpg'); /* Adjust the path to your image */
     background-size: cover;
-    color: #333; /* Text color */
+    height: 100vh; /* Set height to viewport height */
+    position: relative;
 }
 
 /* Navigation bar styles */
 nav {
-    background-color: #222; /* Background color */
+    position: fixed; /* Fixed position at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
     padding: 10px 0;
+    z-index: 1000; /* Ensure navigation bar stays on top */
 }
 
 nav ul {
@@ -36,7 +48,7 @@ nav ul li a {
 /* Header styles */
 header {
     text-align: center;
-    padding: 100px 0; /* Adjust the top and bottom padding to center the content vertically */
+    padding: 100px 0 50px; /* Adjust bottom padding to push content below navigation bar */
 }
 
 header h1 {
@@ -51,10 +63,13 @@ header h2 {
 
 /* About Me section styles */
 section#about {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    background-color: #fff; /* White background */
     padding: 30px;
-    margin: 20px;
     border-radius: 10px;
+    margin: 0 auto; /* Center horizontally */
+    max-width: 800px; /* Set maximum width */
+    position: relative;
+    top: -50px; /* Push content up to overlap header */
 }
 
 section#about h3 {
