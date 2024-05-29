@@ -7,7 +7,7 @@ body {
 
 header {
     background: url('images/forest.jpg') no-repeat center center;
-    background-size: cover; /* Cover the entire header */
+    background-size: cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -26,6 +26,45 @@ header {
     font-size: 1.5rem;
     color: #ffffff;
     text-shadow: 1px 1px 2px #000000;
+}
+
+/* Style the dropdown button */
+.dropdown button {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ffffff;
+    z-index: 1000;
+}
+
+/* Style the dropdown content (hidden by default) */
+#dropdownContent {
+    display: none;
+    position: fixed;
+    top: 3.5rem;
+    right: 1rem;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+/* Style the links inside the dropdown */
+#dropdownContent a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+/* Style the links on hover */
+#dropdownContent a:hover {
+    text-decoration: underline;
 }
 
 nav {
@@ -76,13 +115,13 @@ nav ul li a:hover {
     border: 3px solid #00bfff;
 }
 
-#footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
+footer {
+    background: #333;
     padding: 1rem;
     text-align: center;
+}
+
+footer p {
+    margin: 0;
     color: #ffffff;
 }
