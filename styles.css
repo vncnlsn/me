@@ -76,13 +76,13 @@ nav ul li a:hover {
     border: 3px solid #00bfff;
 }
 
-footer {
-    background: #333;
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
     padding: 1rem;
     text-align: center;
-}
-
-footer p {
-    margin: 0;
     color: #ffffff;
 }
