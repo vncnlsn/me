@@ -6,10 +6,10 @@ function toggleFolder(folderElement) {
     if (fileList.style.display === 'block') {
         fileList.style.display = 'none';
         carrot.style.transform = 'rotate(0deg)';
-        folderName.style.color = 'white';
+        folderName.style.color = '#fff';
     } else {
         fileList.style.display = 'block';
         carrot.style.transform = 'rotate(90deg)';
-        folderName.style.color = 'blue';
+        folderName.style.color = '#0366d6';
     }
 }
