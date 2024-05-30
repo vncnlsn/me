@@ -1,12 +1,15 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const folders = document.querySelectorAll(".folder");
+function toggleFolder(folderElement) {
+    const fileList = folderElement.nextElementSibling;
+    const carrot = folderElement.querySelector('.carrot');
+    const folderName = folderElement.querySelector('.folder-name');
 
-    folders.forEach(folder => {
-        folder.addEventListener("click", function() {
-            const notes = this.nextElementSibling;
-            notes.classList.toggle("active");
-            const arrow = this.querySelector(".arrow");
-            arrow.textContent = arrow.textContent === ">" ? "▼" : ">";
-        });
-    });
-});
+    if (fileList.style.display === 'block') {
+        fileList.style.display = 'none';
+        carrot.style.transform = 'rotate(0deg)';
+        folderName.style.color = 'white';
+    } else {
+        fileList.style.display = 'block';
+        carrot.style.transform = 'rotate(90deg)';
+        folderName.style.color = 'blue';
+    }
+}
