@@ -120,42 +120,4 @@ nav ul li a:hover {
     background-color: #f2f2f2; /* Light gray on hover */
 }
 
-footer {
-    background: #000; /* Black background for the footer */
-    padding: 1rem;
-    text-align: center;
-    margin-top: auto; /* Push the footer to the bottom */
-}
-
-footer p {
-    margin: 0;
-    color: #ffffff;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .header-content h1 {
-        font-size: 3rem;
-    }
-
-    .header-content p {
-        font-size: 1.2rem;
-    }
-
-    .section h2 {
-        font-size: 2rem;
-    }
-
-    .section p {
-        font-size: 1rem;
-    }
-
-    .section img {
-        max-width: 150px;
-    }
-
-    .links {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-}
+.happy-hacking
