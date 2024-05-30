@@ -1,3 +1,8 @@
+/* Add this at the top or anywhere in your CSS file */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Reset default browser styles */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
