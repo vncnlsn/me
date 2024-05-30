@@ -42,3 +42,8 @@ function showContent(event, noteId) {
     // Set active link color to orange
     event.target.style.color = 'orange';
 }
+
+function toggleFolder(folderElement) {
+    const fileList = folderElement.nextElementSibling;
+    
+}
