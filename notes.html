@@ -16,8 +16,8 @@
                         <span class="folder-name">Overview</span>
                     </div>
                     <ul class="file-list">
-                        <li><a href="#">Overview 1</a></li>
-                        <li><a href="#">Overview 2</a></li>
+                        <li><a href="#" onclick="showContent(event, 'overview1')">Overview 1</a></li>
+                        <li><a href="#" onclick="showContent(event, 'overview2')">Overview 2</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -26,8 +26,8 @@
                         <span class="folder-name">Methodology</span>
                     </div>
                     <ul class="file-list">
-                        <li><a href="#">Methodology 1</a></li>
-                        <li><a href="#">Methodology 2</a></li>
+                        <li><a href="#" onclick="showContent(event, 'methodology1')">Methodology 1</a></li>
+                        <li><a href="#" onclick="showContent(event, 'methodology2')">Methodology 2</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -36,8 +36,8 @@
                         <span class="folder-name">Fundamentals</span>
                     </div>
                     <ul class="file-list">
-                        <li><a href="#">Fundamentals 1</a></li>
-                        <li><a href="#">Fundamentals 2</a></li>
+                        <li><a href="#" onclick="showContent(event, 'fundamentals1')">Fundamentals 1</a></li>
+                        <li><a href="#" onclick="showContent(event, 'fundamentals2')">Fundamentals 2</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -46,8 +46,8 @@
                         <span class="folder-name">Enumeration</span>
                     </div>
                     <ul class="file-list">
-                        <li><a href="#">Enumeration 1</a></li>
-                        <li><a href="#">Enumeration 2</a></li>
+                        <li><a href="#" onclick="showContent(event, 'enumeration1')">Enumeration 1</a></li>
+                        <li><a href="#" onclick="showContent(event, 'enumeration2')">Enumeration 2</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -56,8 +56,8 @@
                         <span class="folder-name">Vulnerabilities</span>
                     </div>
                     <ul class="file-list">
-                        <li><a href="#">Vulnerabilities 1</a></li>
-                        <li><a href="#">Vulnerabilities 2</a></li>
+                        <li><a href="#" onclick="showContent(event, 'vulnerabilities1')">Vulnerabilities 1</a></li>
+                        <li><a href="#" onclick="showContent(event, 'vulnerabilities2')">Vulnerabilities 2</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -66,8 +66,8 @@
                         <span class="folder-name">Exploits</span>
                     </div>
                     <ul class="file-list">
-                        <li><a href="#">Exploits 1</a></li>
-                        <li><a href="#">Exploits 2</a></li>
+                        <li><a href="#" onclick="showContent(event, 'exploits1')">Exploits 1</a></li>
+                        <li><a href="#" onclick="showContent(event, 'exploits2')">Exploits 2</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -76,14 +76,69 @@
                         <span class="folder-name">Reporting</span>
                     </div>
                     <ul class="file-list">
-                        <li><a href="#">Reporting 1</a></li>
-                        <li><a href="#">Reporting 2</a></li>
+                        <li><a href="#" onclick="showContent(event, 'reporting1')">Reporting 1</a></li>
+                        <li><a href="#" onclick="showContent(event, 'reporting2')">Reporting 2</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
         <main class="content">
-            <!-- Content goes here -->
+            <div id="overview1" class="note-content">
+                <h2>Overview 1</h2>
+                <p>This is the content for Overview 1.</p>
+            </div>
+            <div id="overview2" class="note-content">
+                <h2>Overview 2</h2>
+                <p>This is the content for Overview 2.</p>
+            </div>
+            <div id="methodology1" class="note-content">
+                <h2>Methodology 1</h2>
+                <p>This is the content for Methodology 1.</p>
+            </div>
+            <div id="methodology2" class="note-content">
+                <h2>Methodology 2</h2>
+                <p>This is the content for Methodology 2.</p>
+            </div>
+            <div id="fundamentals1" class="note-content">
+                <h2>Fundamentals 1</h2>
+                <p>This is the content for Fundamentals 1.</p>
+            </div>
+            <div id="fundamentals2" class="note-content">
+                <h2>Fundamentals 2</h2>
+                <p>This is the content for Fundamentals 2.</p>
+            </div>
+            <div id="enumeration1" class="note-content">
+                <h2>Enumeration 1</h2>
+                <p>This is the content for Enumeration 1.</p>
+            </div>
+            <div id="enumeration2" class="note-content">
+                <h2>Enumeration 2</h2>
+                <p>This is the content for Enumeration 2.</p>
+            </div>
+            <div id="vulnerabilities1" class="note-content">
+                <h2>Vulnerabilities 1</h2>
+                <p>This is the content for Vulnerabilities 1.</p>
+            </div>
+            <div id="vulnerabilities2" class="note-content">
+                <h2>Vulnerabilities 2</h2>
+                <p>This is the content for Vulnerabilities 2.</p>
+            </div>
+            <div id="exploits1" class="note-content">
+                <h2>Exploits 1</h2>
+                <p>This is the content for Exploits 1.</p>
+            </div>
+            <div id="exploits2" class="note-content">
+                <h2>Exploits 2</h2>
+                <p>This is the content for Exploits 2.</p>
+            </div>
+            <div id="reporting1" class="note-content">
+                <h2>Reporting 1</h2>
+                <p>This is the content for Reporting 1.</p>
+            </div>
+            <div id="reporting2" class="note-content">
+                <h2>Reporting 2</h2>
+                <p>This is the content for Reporting 2.</p>
+            </div>
         </main>
     </div>
     <script src="script.js"></script>
