@@ -43,7 +43,22 @@ function showContent(event, noteId) {
     event.target.style.color = 'orange';
 }
 
-function toggleFolder(folderElement) {
-    const fileList = folderElement.nextElementSibling;
-    
-}
+document.addEventListener('DOMContentLoaded', function () {
+    const overviewLink = document.getElementById('overview-link');
+    const overviewContent = document.getElementById('overview');
+
+    overviewLink.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // Toggle class for link
+        overviewLink.classList.toggle('overview-active');
+
+        // Toggle display for content
+        if (overviewContent.style.display === 'block') {
+            overviewContent.style.display = 'none';
+        } else {
+            overviewContent.style.display = 'block';
+        }
+    });
+});
+
