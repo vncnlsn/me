@@ -1,8 +1,3 @@
-/* Add this at the top or anywhere in your CSS file */
-html {
-    scroll-behavior: smooth;
-}
-
 /* Reset default browser styles */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
@@ -100,11 +95,23 @@ nav ul li a:hover {
     border: 3px solid #00bfff;
 }
 
+.blank-line {
+    height: 1rem; /* Adjust the height of the blank line as needed */
+}
+
+.happy-hacking {
+    text-align: center;
+}
+
+.happy-hacking p {
+    margin: 0;
+}
+
 .links {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 1.5rem; /* Add some margin to space out from the paragraph */
+    margin-top: 1rem; /* Add some margin to space out from the paragraph */
 }
 
 .links .button {
@@ -118,18 +125,6 @@ nav ul li a:hover {
 
 .links .button:hover {
     background-color: #f2f2f2; /* Light gray on hover */
-}
-
-.happy-hacking {
-    margin-top: 1.5rem; /* Add space between the paragraphs */
-    text-align: center; /* Center align the text */
-    position: relative; /* Set position to relative */
-}
-
-.happy-hacking p {
-    position: absolute; /* Set position to absolute */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for half of the element's width */
 }
 
 footer {
