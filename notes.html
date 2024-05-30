@@ -11,14 +11,7 @@
         <nav class="sidebar">
             <ul class="nav">
                 <li class="nav-item">
-                    <div class="folder" onclick="toggleFolder(this)">
-                        <span class="carrot">></span>
-                        <span class="folder-name">Overview</span>
-                    </div>
-                    <ul class="file-list">
-                        <li><a href="#" onclick="showContent(event, 'overview1')">Overview 1</a></li>
-                        <li><a href="#" onclick="showContent(event, 'overview2')">Overview 2</a></li>
-                    </ul>
+                    <a href="#" class="overview-link" onclick="showContent(event, 'overview')">Overview (START HERE!)</a>
                 </li>
                 <li class="nav-item">
                     <div class="folder" onclick="toggleFolder(this)">
@@ -83,13 +76,8 @@
             </ul>
         </nav>
         <main class="content">
-            <div id="overview1" class="note-content">
-                <h2>Overview 1</h2>
-                <p>This is the content for Overview 1.</p>
-            </div>
-            <div id="overview2" class="note-content">
-                <h2>Overview 2</h2>
-                <p>This is the content for Overview 2.</p>
+            <div id="overview" class="note-content">
+                <!-- Overview content will be loaded here -->
             </div>
             <div id="methodology1" class="note-content">
                 <h2>Methodology 1</h2>
