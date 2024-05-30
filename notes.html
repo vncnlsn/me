@@ -3,37 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Knowledge Base</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Cybersecurity Learning</title>
+    <link rel="stylesheet" href="notestyle.css">
 </head>
 <body>
-    <div id="container">
-        <nav id="sidebar">
-            <ul>
-                <li>
-                    <span class="folder">Hacking Methodology</span><span class="arrow">></span>
-                    <ul class="notes">
-                        <li><a href="#">Note 1</a></li>
-                        <li><a href="#">Note 2</a></li>
-                        <li><a href="#">Note 3</a></li>
+    <div class="container">
+        <nav class="sidebar">
+            <ul class="nav">
+                <li class="nav-item">
+                    <div class="folder" onclick="toggleFolder(this)">
+                        <span class="carrot">></span>
+                        <span class="folder-name">Overview</span>
+                    </div>
+                    <ul class="file-list">
+                        <!-- Add file items here -->
                     </ul>
                 </li>
-                <li>
-                    <span class="folder">Enumeration</span><span class="arrow">></span>
-                    <ul class="notes">
-                        <li><a href="#">Note 4</a></li>
-                        <li><a href="#">Note 5</a></li>
+                <li class="nav-item">
+                    <div class="folder" onclick="toggleFolder(this)">
+                        <span class="carrot">></span>
+                        <span class="folder-name">Methodology</span>
+                    </div>
+                    <ul class="file-list">
+                        <!-- Add file items here -->
                     </ul>
                 </li>
-                <!-- Add more folders and notes as needed -->
+                <!-- Add more folders as needed -->
             </ul>
         </nav>
-
-        <main id="content">
-            <!-- Content area -->
+        <main class="content">
+            <!-- Content goes here -->
         </main>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
