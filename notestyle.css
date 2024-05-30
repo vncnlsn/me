@@ -1,3 +1,4 @@
+/* Body styles */
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -5,11 +6,13 @@ body {
     color: white;
 }
 
+/* Container styles */
 .container {
     display: flex;
     min-height: 100vh;
 }
 
+/* Sidebar styles */
 .sidebar {
     width: 250px;
     background-color: black;
@@ -19,16 +22,19 @@ body {
     border-right: 1px solid #444;
 }
 
+/* Navigation styles */
 .nav {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
+/* Navigation item styles */
 .nav-item {
     margin-bottom: 10px;
 }
 
+/* Folder styles */
 .folder {
     cursor: pointer;
     display: flex;
@@ -37,29 +43,35 @@ body {
     color: white;
 }
 
+/* Carrot styles */
 .carrot {
     margin-right: 10px;
     transition: transform 0.3s, color 0.3s;
 }
 
+/* Folder name styles */
 .folder-name {
     transition: color 0.3s, font-weight 0.3s;
 }
 
+/* Hover styles for folder name */
 .folder:hover .folder-name {
     color: #0366d6;
 }
 
+/* File list styles */
 .file-list {
     list-style-type: none;
     padding-left: 20px;
     display: none;
 }
 
+/* File list item styles */
 .file-list li {
     margin: 5px 0;
 }
 
+/* Link styles within file list */
 .file-list li a {
     color: white;
     text-decoration: none;
@@ -68,11 +80,13 @@ body {
     transition: color 0.3s;
 }
 
+/* Hover and active styles for links */
 .file-list li a:hover,
 .file-list li a:active {
     color: orange;
 }
 
+/* Content styles */
 .content {
     flex-grow: 1;
     padding: 20px;
@@ -81,21 +95,19 @@ body {
     display: none; /* Hide initially */
 }
 
-.note-content {
-    display: none; /* Hide all note contents initially */
-}
-
+/* Active note content styles */
 .note-content.active {
     display: block; /* Show active note content */
 }
 
-/* Add this style for the active link */
-.overview-active {
-    color: orange;
-    font-weight: bold;
+/* Overview link styles */
+#overview-link {
+    color: white;
+    font-weight: normal; /* Default font weight */
 }
 
-/* Add this style to hide the note content initially */
-.note-content {
-    display: none;
+/* Overview link styles when active */
+.overview-active {
+    font-weight: bold; /* Bold font weight when active */
+    color: orange; /* Orange color when active */
 }
