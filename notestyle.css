@@ -88,3 +88,14 @@ body {
 .note-content.active {
     display: block; /* Show active note content */
 }
+
+/* Add this style for the active link */
+.overview-active {
+    color: orange;
+    font-weight: bold;
+}
+
+/* Add this style to hide the note content initially */
+.note-content {
+    display: none;
+}
