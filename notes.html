@@ -7,48 +7,31 @@
     <link rel="stylesheet" href="notestyle.css">
 </head>
 <body>
-    <nav>
+    <nav id="sidebar">
         <ul>
-            <li><a href="#methodology">Hacking Methodology</a></li>
-            <li><a href="#enumeration">Enumeration</a></li>
-            <li><a href="#networking">Networking Fundamentals</a></li>
-            <li><a href="#commands">Linux and Windows Commands</a></li>
-            <li><a href="#vulnerabilities">Vulnerability Types</a></li>
-            <li><a href="#attacks">Attack Methods</a></li>
-            <!-- Add more sections as needed -->
+            <li>
+                <span class="folder">Hacking Methodology</span>
+                <ul class="notes">
+                    <li><a href="#">Note 1</a></li>
+                    <li><a href="#">Note 2</a></li>
+                    <li><a href="#">Note 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <span class="folder">Enumeration</span>
+                <ul class="notes">
+                    <li><a href="#">Note 4</a></li>
+                    <li><a href="#">Note 5</a></li>
+                </ul>
+            </li>
+            <!-- Add more folders and notes as needed -->
         </ul>
     </nav>
 
-    <main>
-        <section id="methodology">
-            <h2>Hacking Methodology</h2>
-            <p>Your notes on hacking methodology go here...</p>
-        </section>
-
-        <section id="enumeration">
-            <h2>Enumeration</h2>
-            <p>Your notes on enumeration go here...</p>
-        </section>
-
-        <section id="networking">
-            <h2>Networking Fundamentals</h2>
-            <p>Your notes on networking fundamentals go here...</p>
-        </section>
-
-        <section id="commands">
-            <h2>Linux and Windows Commands</h2>
-            <p>Your notes on Linux and Windows commands go here...</p>
-        </section>
-
-        <section id="vulnerabilities">
-            <h2>Vulnerability Types</h2>
-            <p>Your notes on vulnerability types go here...</p>
-        </section>
-
-        <section id="attacks">
-            <h2>Attack Methods</h2>
-            <p>Your notes on attack methods go here...</p>
-        </section>
+    <main id="content">
+        <!-- Content area -->
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
