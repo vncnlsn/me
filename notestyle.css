@@ -18,6 +18,10 @@ body {
     cursor: pointer;
 }
 
+.arrow {
+    margin-left: 5px;
+}
+
 .notes {
     display: none;
 }
