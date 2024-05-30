@@ -123,6 +123,13 @@ nav ul li a:hover {
 .happy-hacking {
     margin-top: 1.5rem; /* Add space between the paragraphs */
     text-align: center; /* Center align the text */
+    position: relative; /* Set position to relative */
+}
+
+.happy-hacking p {
+    position: absolute; /* Set position to absolute */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for half of the element's width */
 }
 
 footer {
