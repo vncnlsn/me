@@ -121,7 +121,8 @@ nav ul li a:hover {
 }
 
 .happy-hacking {
-    color: #ffffff; /* Changed to white */
+    margin-top: 1.5rem; /* Add space between the paragraphs */
+    text-align: center; /* Center align the text */
 }
 
 footer {
